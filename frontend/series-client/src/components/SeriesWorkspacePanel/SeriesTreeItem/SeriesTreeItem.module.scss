@@ -1,0 +1,31 @@
+.seriesTreeItemContent {
+  min-height: 34px;
+  border-radius: 6px;
+  min-width: 0;
+}
+
+.seriesTreeItemContent:hover {
+  background: var(--color-hover);
+}
+
+.seriesTreeItemContent.seriesTreeItemContentSelected {
+  background: var(--color-selected);
+}
+
+.seriesTreeItemContent.seriesTreeItemContentSelected:hover {
+  background: var(--color-selected-hover);
+}
+
+.seriesTreeItemLabel {
+  min-width: 0;
+  font-size: 0.8125rem;
+  line-height: 1.35;
+}
+
+.seriesTreeItemText {
+  display: block;
+  min-width: 0;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}

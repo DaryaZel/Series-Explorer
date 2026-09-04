@@ -1,0 +1,1 @@
+export { SeriesWorkspacePanel } from './SeriesWorkspacePanel';

@@ -1,0 +1,60 @@
+.root {
+  height: 100vh;
+  min-height: 620px;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-background);
+}
+
+.header {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  min-height: 64px;
+  padding: 12px 24px;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.networkStatus {
+  flex: 0 0 auto;
+  padding: 8px 24px;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-error);
+  color: var(--color-surface);
+}
+
+.content {
+  --workspace-panel-header-height: 98px;
+
+  min-height: 0;
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: minmax(520px, clamp(520px, 32vw, 680px)) minmax(0, 1fr);
+}
+
+@media (width <= 1023px) {
+  .content {
+    grid-template-columns: minmax(340px, 44vw) minmax(0, 1fr);
+  }
+}
+
+@media (width <= 767px) {
+  .root {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(280px, 38vh) minmax(480px, auto);
+  }
+}

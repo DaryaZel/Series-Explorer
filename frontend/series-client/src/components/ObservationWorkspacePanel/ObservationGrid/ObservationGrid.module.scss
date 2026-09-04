@@ -1,0 +1,37 @@
+.observationGrid {
+  min-height: 360px;
+  border: 0;
+}
+
+.columnSeparator {
+  display: none;
+}
+
+.dividerColumn {
+  border-right: 1px solid var(--color-border-muted);
+}
+
+.filler,
+.scrollbarFiller {
+  border-left: 0;
+}
+
+.gridCell,
+.columnHeader {
+  box-sizing: border-box;
+}
+
+.withBorderColor {
+  border-color: var(--color-border-muted);
+}
+
+.lockedCell {
+  background-color: var(--color-locked);
+  color: var(--color-locked-text);
+  font-weight: 650;
+}
+
+.row:hover .lockedCell,
+.editingCell.lockedCell {
+  background-color: var(--color-locked);
+}
